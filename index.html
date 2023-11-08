@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>  
+  <meta charset="utf-8">
+  <meta name="viewport" conent="width=device-width, initial-scale=1">
+  <meta name="author" content="Robyn Waddell">
+  <meta name="description" content="Robyn Waddell's Portfolio">
+  <meta name="keywords" content="web developer, front end, design">
+  <title>To Do List Maker</title>
+  <link rel="stylesheet" href="./assets/style/index.css" media="all">
+  <link rel="stylesheet" href="./assets/style/reset.css" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="./assets/script/index.js" defer></script> 
+</head>
+            <!-- <h3>Click the check mark to cross yout item off the list</h3>
+            <h3>Click the "Clear" button to clear your list</h3> -->
+    <body>
+      <main class="container">
+        <div>
+            <h1>Create a To-Do List</h1>
+        </div>
+        <div>
+          <div class="helpText">
+            <p id="first">Enter text into the input field and click the "+" to add the item to your list</p>
+            <p id="third">Click the item to cross it off your list (click again to undo) or click the "X" to remove 
+              the item from your list
+            </p>
+          </div>
+        </div>
+    
+        <div>
+          <div class="flex">
+            <input id="userInput" type="text" placeholder="New item..." maxlength="50">
+            <button id="enter"><i class="fa-sharp fa-regular fa-plus" style="color: #fff;"></i></button>
+          </div>
+        </div>
+    
+        <!-- Empty List -->
+          <div class="listItems">
+            <ul>
+            </ul>
+          </div>
+      </main>
+      <footer></footer>
+    </body>
+    </html>
