@@ -15,13 +15,12 @@ function listLength(){
 
 function createListElement() {
 	let li = document.createElement("li"); // creates an element "li"
-	li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
+	li.appendChild(document.createTextNode(input.value)); //puts text from input field into the li 
 	ul.appendChild(li); //adds li to ul
 	input.value = ""; //Reset text input field
 
 
-	//START STRIKETHROUGH
-	// because it's in the function, it only adds it for new items
+	//STRIKETHROUGH
 	function crossOut() {
 		li.classList.toggle("done");
 	}
@@ -30,7 +29,7 @@ function createListElement() {
 
 
 
-	// START ADD DELETE BUTTON
+	// DELETE BUTTON
 	var dBtn = document.createElement("button");
 	dBtn.appendChild(document.createTextNode("X"));
 	li.appendChild(dBtn);
